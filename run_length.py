@@ -12,13 +12,11 @@ def encode(sequence):
     result.append((sequence[len(sequence) - 1], count))
     return result
 
-
 def decode(sequence):
     result = []
     for item in sequence:
         result.append(item[0] * item[1])
     return "".join(result)
-
 
 def formatOutput(sequence):
     result = []
@@ -46,7 +44,6 @@ def main():
 
     print("Encoded String: " + formatOutput(encoded))
     print("Decoded String: " + decoded)
-
 
 if __name__ == "__main__":
     main()
